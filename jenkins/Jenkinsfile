@@ -4,9 +4,7 @@ pipeline {
         skipStagesAfterUnstable()
     }
     tools {
-        // This section declares the Maven tool to be used in the pipeline.
-        // The 'M3' here must match the name configured in Global Tool Configuration.
-        maven 'M3' 
+        maven 'maven-3.27' 
     }
     stages {
         stage('Build') {
